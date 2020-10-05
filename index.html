@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>malvinnganga project</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <div class="header">
+    <h1>AKAN NAMES CALCULATION PAGE</h1>
+    <h2>Brief history of Akan names</h2>
+    <p>The Akan people of Ghana frequently name their children after the day of the week they were born and the order in which they were born. These "day names" have further meanings concerning the soul and character of the person. Middle names have considerably more variety and can refer to their birth order, twin status, or an ancestor's middle name.This naming tradition is shared throughout West Africa and the African diaspora. During the 18th–19th centuries, enslaved people in the Caribbean from the region that is modern-day Ghana were referred to as Coromantees.</p>
+    <h1>list of Akan names in Ghana</h1>
+    <h2>Male names;</h2>
+    <ol>
+        <li>Sunday: Kwasi</li>
+        <li>Monday: Kwadwo</li>
+        <li>Tuesday: Kwabena</li>
+        <li>Wednesday: Kwaku</li>
+        <li>Thursday: Yaw</li>
+        <li>Friday: Kofi</li>
+        <li>Saturday: Kwame</li>
+    </ol>
+    <h2>Female names;</h2>
+    <ol>
+        <li>Sunday: Akosua</li>
+        <li>Monday: Adwoa</li>
+        <li>Tuesday: Abenaa</li>
+        <li>Wednesday: Akua</li>
+        <li>Thursday:  Yaa</li>
+        <li>Friday: Afua</li>
+        <li>Saturday: Ama</li>
+    </ol>
+    <h1>WHATS YOUR AKAN NAME?</h1>
+    <p>Do you want to know your Akan name, calculate it in the form below;</p>
+    <form action="_page.php" method="get">
+        <label for="century" class="labels">Century</label>
+        <input type="text" class="form-control" placeholder="Enter the century" id="century" required  min="0" max="30">
+        <label for="year" class="labels">Year</label>
+        <input type="text" placeholder="Enter the year"class="form-control" id="year" required min="0" max="100">
+        <label for="month" class="labels">Month</label>
+        <input type="text" class="form-control" placeholder="Enter the month of the year" id="month" required min="0" max="12">
+        <label for="monthDay" class="labels">Day of month</label>
+        <input type="text" placeholder="Enter the day of the month" class="form-control" id="monthday" required min="0" max="12">
+        <input type="radio" id="male" name="gender" value="male">
+     <div class="radio-button">
+        <input type="radio" class="genders labels" value="male" id="rad1" name="rads" required>Male
+        <input type="radio" class="genders labels" value="female" id="rad1" name="rads" required>Female
+     </div>
+     <br>
+     <a href="#result"><button type="button" name="button" class="btn btn-primary mb-2" onclick="checkDayOfWeek();">Calculate Birthday</button></a>
+    </form>
+</div>
+<script> src="js/script.js"></script>
+</body>
+</html>
