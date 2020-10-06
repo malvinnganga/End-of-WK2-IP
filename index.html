@@ -34,26 +34,35 @@
     </ol>
     <h1>WHATS YOUR AKAN NAME?</h1>
     <p>Do you want to know your Akan name, calculate it in the form below;</p>
-    <form action="_page.php" method="get">
-        <label for="century" class="labels">Century</label>
-        <input type="text" class="form-control" placeholder="Enter the century" id="century" required  min="0" max="30">
-        <label for="year" class="labels">Year</label>
-        <input type="text" placeholder="Enter the year"class="form-control" id="year" required min="0" max="100">
-        <label for="month" class="labels">Month</label>
-        <input type="text" class="form-control" placeholder="Enter the month of the year" id="month" required min="0" max="12">
-        <label for="monthDay" class="labels">Day of month</label>
-        <input type="text" placeholder="Enter the day of the month" class="form-control" id="monthday" required min="0" max="12">
-        <input type="radio" id="male" name="gender" value="male">
-     <div class="radio-button">
-        <input type="radio" class="genders labels" value="male" id="rad1" name="rads" required>Male
-        <input type="radio" class="genders labels" value="female" id="rad1" name="rads" required>Female
-     </div>
-     <br>
-     <a href="#result"><button type="button" name="button" class="btn btn-primary mb-2" onclick="checkDayOfWeek();">Calculate Birthday</button></a>	
-     </div>
-     <h1 id="result"></h1>
+    <form class="myform" onsubmit="return getAkanName()">
+            <label for="Year-of-birth">
+                Year:
+                <input id="year-input" type="number" name="year-of-birth"placeholder="YYYY" value="" required>
+            </label>
+            <label for="month-of-birth">
+                Month:
+                <input id="month-input" type="number" name="month-of-birth"placeholder="MM" value="" required>
+            </label>
+            <label for="day-of-birth">
+                Day:
+                <input id="day-input" type="number" name="day-of-birth" placeholder="DD" value="" required>
+            </label>
+            <br>
+            <label for="gender">
+                <p>Select your gender: </p>
+                Male
+                <input id="male-input" type="radio" name="gender" value="male" required>
+                Female
+                <input id="female-input" type="radio" name="gender" value="female" required>
+            </label>
+            <br><br>
+            <input id="get-name" type="submit" name="" value="submit">
+            <br><br>
     </form>
-</div>
-<script type="text/javascript" src="script.js"></script>
+    <h4 id = display-name><strong>Your Akan name will be displayed below:</strong></h4>
+    <p id="result"></p>
+
+    <script src="script/script.js" ></script>
+    </div>
 </body>
 </html>

@@ -11,7 +11,7 @@ THIS PROJECT I CREATED TO HELP PEOPLE GET INFORMATION ABOUT THEIR CULTURAL BACKG
 * OPEN THE LINK ON THE DESCRIPTION
 * TO CONTRIBUTE TO THIS PROJECT YOU CAN FORK THE REPOSITORY ON GIT HUB
 ## Known Bugs
-In the form of calculating Akan name there is a button that does not have a specific use therefore users should aviod using it to evade any misfunction of the intended idea.
+In the form there is a problem of not loging some date printed.
 ## Technologies Used
 This project i majorly used the HTML language css and javascript.
 ## Support and contact details
